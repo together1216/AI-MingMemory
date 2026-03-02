@@ -1,0 +1,16 @@
+llm:
+  provider: "deepseek"
+  api_key: "sk-ae95757389e04c4fb4632e776580f52b"
+  base_url: "https://api.deepseek.com/v1"
+  model: "deepseek-chat"
+
+system:
+  seed_path: "./seed"
+  memory_path: "./memory"
+  auto_backup: true
+  backup_interval: 3600
+
+agent_loop:
+  force_memory: true
+  force_seed: true
+  log_level: "INFO"
